@@ -3,12 +3,9 @@
     <canvas
       #chartCanvas
       baseChart
-      [datasets]="barChartData"
-      [labels]="barChartLabels"
+      [data]="chartData.chart.data"
+      [type]="barChartType"
       [options]="barChartOptions"
-      [plugins]="barChartPlugins"
-      [legend]="barChartLegend"
-      [chartType]="barChartType"
     ></canvas>
   </ng-container>
 </div>

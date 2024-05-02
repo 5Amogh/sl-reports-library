@@ -1,17 +1,13 @@
-<div *ngIf="barChartData" class="graph-filters" #chartRootElement>
-  <div *ngIf="data?.chart?.data" class="bar-chart-wrapper">
+<div class="graph-filters" #chartRootElement>
+  <div  class="bar-chart-wrapper">
     <canvas
       #chartCanvas 
       baseChart 
-      [datasets]="barChartData"
-      [labels]="barChartLabels"
+      [data]="barData"
+      [type]="'bar'"
       [options]="barChartOptions"
-      [chartType]="barChartType"
-      [legend]="barChartLegend"
-      [plugins]="barChartPlugins"
-      [colors]="chartColors"
     ></canvas>
   </div>
 
-  <div *ngIf="!data?.chart?.data" class="errorMsg">No data found</div>
+ <div *ngIf="!data?.chart?.data" class="errorMsg">No data found</div>
 </div>

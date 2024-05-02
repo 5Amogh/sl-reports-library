@@ -3,18 +3,17 @@ import { SlReportsLibraryComponent } from './sl-reports-library.component';
 import { ReportHeaderComponent } from './report-header/report-header.component';
 import { PieChartComponent } from './pie-chart/pie-chart.component';
 import { BarChartComponent } from './bar-chart/bar-chart.component';
-import { ChartsModule } from 'ng2-charts';
+import { NgChartsModule } from 'ng2-charts';
 import { CommonModule } from '@angular/common';
 import { GenericChartComponent } from './generic-chart/generic-chart.component';
 import { PercentageColumnChartsComponent } from './percentage-column-charts/percentage-column-charts.component';
 import { ScatterChartsComponent } from './scatter-charts/scatter-charts.component';
 import { MatrixChartComponent } from './matrix-chart/matrix-chart.component';
-import { SuiModule, SuiAccordionModule } from 'ng2-semantic-ui-v9';
+import { SuiModule, SuiAccordionModule } from '@project-sunbird/ng2-semantic-ui';
 import { ReportsTextComponent } from './reports-text/reports-text.component';
 import { ExpansionTableComponent } from './expansion-table/expansion-table.component';
 import { ExpansionPanelComponent } from './expansion-panel/expansion-panel.component';
 import { AttachmentsComponent } from './attachments/attachments.component';
-import ChartDataLabels from 'chartjs-plugin-datalabels';
 
 @NgModule({
   declarations: [
@@ -31,7 +30,7 @@ import ChartDataLabels from 'chartjs-plugin-datalabels';
     ExpansionPanelComponent,
     AttachmentsComponent,
   ],
-  imports: [ChartsModule, CommonModule, SuiModule, SuiAccordionModule],
+  imports: [NgChartsModule, CommonModule, SuiModule, SuiAccordionModule],
   exports: [
     SlReportsLibraryComponent,
     ReportHeaderComponent,

@@ -1,16 +1,10 @@
-<div *ngIf="pieChartData" >
-  <div class="heading">
-    <h4>{{ questionNumber }} {{ data?.question }}</h4>
-  </div>
-  <div *ngIf="data?.chart?.data" class="chart-container">
+<div>
+    <strong>{{ questionNumber }}) {{ data?.question }}</strong>
+  <div class="chart-container">
     <canvas 
     baseChart
-    [data]="pieChartData"
-    [labels]="pieChartLabels"
-    [chartType]="pieChartType"
-    [options]="pieChartOptions"
-    [legend]="pieChartLegend"
-    [colors]="chartColors"
+    [data]="data?.chart.data"
+    [type]="'pie'"
   >
   </canvas>
 </div>

@@ -9,5 +9,7 @@
 }
 
 .chart-container{
+  display: flex;
+  justify-content: center;
   height:350px
 }

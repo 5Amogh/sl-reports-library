@@ -6,8 +6,8 @@
   },
   "allowedNonPeerDependencies": [
     "chart.js",
+    "ng2-charts",
     "chartjs-plugin-datalabels",
-    "chartjs-plugin-stacked100",
-    "ng2-charts"
+    "chartjs-plugin-stacked100"
   ]
 }
